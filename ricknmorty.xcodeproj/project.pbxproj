@@ -19,7 +19,21 @@
 		193CB4F429746FB4009F07DE /* RMEpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193CB4F329746FB4009F07DE /* RMEpisodeViewController.swift */; };
 		193CB4F629746FE3009F07DE /* RMSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193CB4F529746FE3009F07DE /* RMSettingsViewController.swift */; };
 		193CB4F82974700B009F07DE /* RMCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193CB4F72974700B009F07DE /* RMCharacterViewController.swift */; };
+		193CB4FA2974907F009F07DE /* RMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193CB4F92974907F009F07DE /* RMService.swift */; };
+		193CB4FC29749087009F07DE /* RMRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193CB4FB29749087009F07DE /* RMRequest.swift */; };
+		193CB4FE2974908F009F07DE /* RMEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193CB4FD2974908F009F07DE /* RMEndpoint.swift */; };
+		193CB51229749F48009F07DE /* RMRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193CB51129749F48009F07DE /* RMRequestTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		193CB50929749E82009F07DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 193CB4C02974658B009F07DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 193CB4C72974658B009F07DE;
+			remoteInfo = ricknmorty;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		193CB4C82974658B009F07DE /* ricknmorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ricknmorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,10 +50,22 @@
 		193CB4F329746FB4009F07DE /* RMEpisodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMEpisodeViewController.swift; sourceTree = "<group>"; };
 		193CB4F529746FE3009F07DE /* RMSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSettingsViewController.swift; sourceTree = "<group>"; };
 		193CB4F72974700B009F07DE /* RMCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterViewController.swift; sourceTree = "<group>"; };
+		193CB4F92974907F009F07DE /* RMService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMService.swift; sourceTree = "<group>"; };
+		193CB4FB29749087009F07DE /* RMRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMRequest.swift; sourceTree = "<group>"; };
+		193CB4FD2974908F009F07DE /* RMEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEndpoint.swift; sourceTree = "<group>"; };
+		193CB50529749E82009F07DE /* ricknmortyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ricknmortyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		193CB51129749F48009F07DE /* RMRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMRequestTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		193CB4C52974658B009F07DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		193CB50229749E82009F07DE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -53,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				193CB4CA2974658B009F07DE /* ricknmorty */,
+				193CB50629749E82009F07DE /* ricknmortyTests */,
 				193CB4C92974658B009F07DE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				193CB4C82974658B009F07DE /* ricknmorty.app */,
+				193CB50529749E82009F07DE /* ricknmortyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +143,9 @@
 		193CB4E529746869009F07DE /* APIClient */ = {
 			isa = PBXGroup;
 			children = (
+				193CB4F92974907F009F07DE /* RMService.swift */,
+				193CB4FB29749087009F07DE /* RMRequest.swift */,
+				193CB4FD2974908F009F07DE /* RMEndpoint.swift */,
 			);
 			path = APIClient;
 			sourceTree = "<group>";
@@ -149,6 +180,22 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		193CB50629749E82009F07DE /* ricknmortyTests */ = {
+			isa = PBXGroup;
+			children = (
+				193CB50E29749F15009F07DE /* APIClient */,
+			);
+			path = ricknmortyTests;
+			sourceTree = "<group>";
+		};
+		193CB50E29749F15009F07DE /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				193CB51129749F48009F07DE /* RMRequestTests.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,6 +216,24 @@
 			productReference = 193CB4C82974658B009F07DE /* ricknmorty.app */;
 			productType = "com.apple.product-type.application";
 		};
+		193CB50429749E82009F07DE /* ricknmortyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 193CB50B29749E82009F07DE /* Build configuration list for PBXNativeTarget "ricknmortyTests" */;
+			buildPhases = (
+				193CB50129749E82009F07DE /* Sources */,
+				193CB50229749E82009F07DE /* Frameworks */,
+				193CB50329749E82009F07DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				193CB50A29749E82009F07DE /* PBXTargetDependency */,
+			);
+			name = ricknmortyTests;
+			productName = ricknmortyTests;
+			productReference = 193CB50529749E82009F07DE /* ricknmortyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -181,6 +246,10 @@
 				TargetAttributes = {
 					193CB4C72974658B009F07DE = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					193CB50429749E82009F07DE = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 193CB4C72974658B009F07DE;
 					};
 				};
 			};
@@ -198,6 +267,7 @@
 			projectRoot = "";
 			targets = (
 				193CB4C72974658B009F07DE /* ricknmorty */,
+				193CB50429749E82009F07DE /* ricknmortyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +282,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		193CB50329749E82009F07DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -219,11 +296,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				193CB4FE2974908F009F07DE /* RMEndpoint.swift in Sources */,
 				193CB4ED29746E97009F07DE /* RMCharacter.swift in Sources */,
 				193CB4D02974658B009F07DE /* RMTabViewController.swift in Sources */,
 				193CB4EF29746F4A009F07DE /* RMLocationViewController.swift in Sources */,
 				193CB4F429746FB4009F07DE /* RMEpisodeViewController.swift in Sources */,
 				193CB4CC2974658B009F07DE /* AppDelegate.swift in Sources */,
+				193CB4FA2974907F009F07DE /* RMService.swift in Sources */,
+				193CB4FC29749087009F07DE /* RMRequest.swift in Sources */,
 				193CB4F82974700B009F07DE /* RMCharacterViewController.swift in Sources */,
 				193CB4CE2974658B009F07DE /* SceneDelegate.swift in Sources */,
 				193CB4F629746FE3009F07DE /* RMSettingsViewController.swift in Sources */,
@@ -232,7 +312,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		193CB50129749E82009F07DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				193CB51229749F48009F07DE /* RMRequestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		193CB50A29749E82009F07DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 193CB4C72974658B009F07DE /* ricknmorty */;
+			targetProxy = 193CB50929749E82009F07DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		193CB4D62974658C009F07DE /* LaunchScreen.storyboard */ = {
@@ -414,6 +510,42 @@
 			};
 			name = Release;
 		};
+		193CB50C29749E82009F07DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 969CB9DK67;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pingus.ricknmortyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ricknmorty.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ricknmorty";
+			};
+			name = Debug;
+		};
+		193CB50D29749E82009F07DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 969CB9DK67;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pingus.ricknmortyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ricknmorty.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ricknmorty";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -431,6 +563,15 @@
 			buildConfigurations = (
 				193CB4DD2974658C009F07DE /* Debug */,
 				193CB4DE2974658C009F07DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		193CB50B29749E82009F07DE /* Build configuration list for PBXNativeTarget "ricknmortyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				193CB50C29749E82009F07DE /* Debug */,
+				193CB50D29749E82009F07DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
