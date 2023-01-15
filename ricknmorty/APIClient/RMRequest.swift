@@ -32,6 +32,8 @@ final class RMRequest {
         return URL(string: urlString)
     }
     
+    public let method = "GET"
+    
     // Mark - public
     init(endpoint: RMEndpoint, pathComponents: [String], queryParameters: [URLQueryItem]) {
         self.endpoint = endpoint

@@ -34,8 +34,14 @@ final class RMRequestTests: XCTestCase {
         XCTAssertEqual(sut.url!.absoluteString, expectedUrlString)
     }
     
+    func test_method_starts_with_GET() {
+        let sut = makeSut()
+        
+        XCTAssertEqual(sut.method, "GET")
+    }
+    
     // Mark - Utils
-    private func makeSut(endpoint: RMEndpoint = RMEndpoint(), pathComponents: [String] = [], queryParameters: [URLQueryItem]) -> RMRequest {
+    private func makeSut(endpoint: RMEndpoint = RMEndpoint(), pathComponents: [String] = [], queryParameters: [URLQueryItem] = []) -> RMRequest {
         let sut = RMRequest(endpoint: endpoint, pathComponents: pathComponents, queryParameters: queryParameters)
         return sut
     }
