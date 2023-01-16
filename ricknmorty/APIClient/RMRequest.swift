@@ -23,9 +23,11 @@ final class RMRequest {
             return "\($0.name)=\(value)"
         }).joined(separator: "&")
         
-        let appendedSlash = pathComponentsString == "" ? "" : "/"
+        let appendedSlashEndpoints =  endpoint.rawValue == "" ? "" : "/"
         
-        return "\(Contants.baseUrl)\(endpoint.rawValue)\(appendedSlash)\(pathComponentsString)?\(queryParametersString)"
+        let appendedSlashPathComponents = pathComponentsString == "" ? "" : "/"
+        
+        return "\(Contants.baseUrl)\(appendedSlashEndpoints)\(endpoint.rawValue)\(appendedSlashPathComponents)\(pathComponentsString)?\(queryParametersString)"
     }
     
     public var url: URL? {

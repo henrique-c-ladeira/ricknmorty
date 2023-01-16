@@ -8,5 +8,12 @@
 import Foundation
 
 final class RMEndpoint {
-    public private(set) var rawValue: String = ""
+    private var endpoints: [String]
+    public var rawValue: String {
+        return endpoints.joined(separator: "/")
+    }
+    
+    init(endpoints: [String] = []) {
+        self.endpoints = endpoints
+    }
 }

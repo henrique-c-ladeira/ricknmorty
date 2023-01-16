@@ -23,6 +23,7 @@
 		193CB4FC29749087009F07DE /* RMRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193CB4FB29749087009F07DE /* RMRequest.swift */; };
 		193CB4FE2974908F009F07DE /* RMEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193CB4FD2974908F009F07DE /* RMEndpoint.swift */; };
 		193CB51229749F48009F07DE /* RMRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193CB51129749F48009F07DE /* RMRequestTests.swift */; };
+		1941F0AA2974D0D70087D394 /* RMEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1941F0A92974D0D70087D394 /* RMEndpointTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		193CB50529749E82009F07DE /* ricknmortyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ricknmortyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		193CB51129749F48009F07DE /* RMRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMRequestTests.swift; sourceTree = "<group>"; };
 		193CB5132974AE73009F07DE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1941F0A92974D0D70087D394 /* RMEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEndpointTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				193CB51129749F48009F07DE /* RMRequestTests.swift */,
+				1941F0A92974D0D70087D394 /* RMEndpointTests.swift */,
 			);
 			path = APIClient;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				193CB51229749F48009F07DE /* RMRequestTests.swift in Sources */,
+				1941F0AA2974D0D70087D394 /* RMEndpointTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
